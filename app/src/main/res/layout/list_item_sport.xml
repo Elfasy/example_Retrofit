@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/_8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_sport"
+        android:layout_width="@dimen/_55dp"
+        android:layout_height="@dimen/_55dp"
+        android:layout_margin="@dimen/_8dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginRight="@dimen/_16dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/img_sport"
+        android:layout_toRightOf="@id/img_sport"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sport_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:textSize="@dimen/_16dp"
+            android:textStyle="bold"
+            tools:text="@string/example_title" />
+
+        <TextView
+            android:id="@+id/tv_sport_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="Example This is description detail" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
